@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,KAAK;EAChB,KAAK,EAAE,IAAI;EACX,aAAa,ECAA,GAAG;EDChB,UAAU,ECNC,IAAI;EDOf,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,wBAAwB;EACpC,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,GAAG;CACT",
+    "sources": [
+        "Form.module.scss",
+        "../../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "Form.module.css"
+}

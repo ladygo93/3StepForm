@@ -1,0 +1,66 @@
+@import '../../../styles/variables';
+
+.container {
+  background: $formStepBg;
+  border-radius: 8px;
+
+  .showContent {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+
+    .contentContainer {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 10px;
+      row-gap: 15px;
+      width: fit-content;
+
+      .inputContainer {
+        position: relative;
+        display: grid;
+        gap: 5px;
+
+        label {
+          font-weight: 600;
+          text-transform: capitalize;
+          font-size: 14px;
+          cursor: pointer;
+          margin-left: 4px;
+          width: fit-content;
+        }
+
+        input {
+          box-shadow: inset 0 0 5px rgba($color: #000000, $alpha: 0.8);
+          outline: none;
+          padding: 8px;
+          border-radius: $borderRadius;
+          text-transform: capitalize;
+          max-width: 160px;
+          font-size: 12px;
+          border: 1px solid $formStepBg;
+
+          &.email {
+            text-transform: unset;
+          }
+        }
+
+        .error {
+          color: red;
+          font-size: 10px;
+          position: absolute;
+          bottom: -12px;
+          right: 0;
+        }
+      }
+    }
+
+    .btn {
+      justify-self: end;
+    }
+  }
+
+  .hideContent {
+    display: none;
+  }
+}
