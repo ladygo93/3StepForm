@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+
+.header {
+  color: $colorWhite;
+  padding: 15px;
+  background: $formStepHeaderBg;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  text-shadow: 1px 1px rgba($color: #8b83d6, $alpha: 1);
+  font-size: 18px;
+  font-weight: 400;
+}

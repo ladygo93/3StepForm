@@ -1,0 +1,98 @@
+.container {
+  background: #dedede;
+  border-radius: 8px;
+}
+
+.container .showContent {
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+.container .showContent.stepThreeLayout {
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+}
+
+.container .showContent.stepThreeLayout .error {
+  position: initial !important;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.container .showContent .contentContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container .showContent .contentContainer .inputContainer {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container .showContent .contentContainer .inputContainer label {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container .showContent .contentContainer .inputContainer input,
+.container .showContent .contentContainer .inputContainer textarea {
+  -webkit-box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.8);
+          box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.8);
+  outline: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid #dedede;
+}
+
+.container .showContent .contentContainer .inputContainer input {
+  text-transform: capitalize;
+  max-width: 160px;
+}
+
+.container .showContent .contentContainer .inputContainer input.email {
+  text-transform: unset;
+}
+
+.container .showContent .contentContainer .inputContainer textarea {
+  width: 300px !important;
+  height: 120px !important;
+  resize: none;
+}
+
+.container .showContent .contentContainer .inputContainer .error {
+  color: #f70000;
+  font-size: 13px;
+  position: absolute;
+  bottom: -14px;
+  right: 5px;
+}
+
+.container .showContent .btn {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.container .hideContent {
+  display: none;
+}
+/*# sourceMappingURL=FormStep.module.css.map */

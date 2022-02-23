@@ -1,0 +1,86 @@
+@import '../../../styles/variables';
+
+.container {
+  background: $formStepBg;
+  border-radius: 8px;
+
+  .showContent {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+
+    &.stepThreeLayout {
+      grid-template-columns: 1fr auto;
+
+      .error {
+        position: initial !important;
+        text-align: right;
+        margin-right: 5px;
+      }
+    }
+
+    .contentContainer {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 10px;
+      row-gap: 15px;
+      width: fit-content;
+
+      .inputContainer {
+        position: relative;
+        display: grid;
+
+        label {
+          font-weight: 600;
+          text-transform: capitalize;
+          font-size: $primaryFontSize;
+          cursor: pointer;
+          margin-left: 5px;
+          width: fit-content;
+        }
+
+        input,
+        textarea {
+          box-shadow: inset 0 0 5px rgba($color: $colorBlack, $alpha: 0.8);
+          outline: none;
+          padding: 8px;
+          border-radius: $borderRadius;
+          font-size: $secondaryFontSize;
+          border: 1px solid $formStepBg;
+        }
+
+        input {
+          text-transform: capitalize;
+          max-width: 160px;
+
+          &.email {
+            text-transform: unset;
+          }
+        }
+
+        textarea {
+          width: 300px !important;
+          height: 120px !important;
+          resize: none;
+        }
+
+        .error {
+          color: $colorRed;
+          font-size: $secondaryFontSize;
+          position: absolute;
+          bottom: -14px;
+          right: 5px;
+        }
+      }
+    }
+
+    .btn {
+      justify-self: end;
+      align-self: flex-end;
+    }
+  }
+
+  .hideContent {
+    display: none;
+  }
+}

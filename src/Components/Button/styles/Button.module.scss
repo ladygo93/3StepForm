@@ -1,0 +1,19 @@
+@import '../../../styles/variables';
+
+.btn {
+  color: $colorWhite;
+  background: $colorBtnLinear;
+  padding: 5px 16px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  border-radius: $borderRadius;
+  min-width: 100px;
+  max-width: 120px;
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+
+  &:hover {
+    box-shadow: inset 0 0 5px black;
+  }
+}

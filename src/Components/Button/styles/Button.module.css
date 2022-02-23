@@ -1,0 +1,21 @@
+.btn {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5a63bf), color-stop(60%, #7463d0));
+  background: linear-gradient(#5a63bf, #7463d0 60%);
+  padding: 5px 16px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  min-width: 100px;
+  max-width: 120px;
+  cursor: pointer;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+}
+
+.btn:hover {
+  -webkit-box-shadow: inset 0 0 5px black;
+          box-shadow: inset 0 0 5px black;
+}
+/*# sourceMappingURL=Button.module.css.map */

@@ -1,0 +1,12 @@
+.header {
+  color: #fff;
+  padding: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fec500), color-stop(60%, #eea30e));
+  background: linear-gradient(#fec500, #eea30e 60%);
+  border-radius: 8px;
+  cursor: pointer;
+  text-shadow: 1px 1px #8b83d6;
+  font-size: 18px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=FormStepHeader.module.css.map */

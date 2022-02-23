@@ -1,0 +1,54 @@
+.selectContainer {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+.selectContainer label {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.selectContainer .customSelect [class$='-control'] {
+  text-transform: capitalize;
+  -webkit-box-shadow: inset 0 -5px 20px rgba(34, 34, 34, 0.8);
+          box-shadow: inset 0 -5px 20px rgba(34, 34, 34, 0.8);
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid #dedede;
+  width: 140px;
+  cursor: pointer;
+}
+
+.selectContainer .customSelect [class$='-indicatorContainer'] {
+  color: #222;
+}
+
+.selectContainer .customSelect [class$='-indicatorSeparator'] {
+  background-color: transparent;
+}
+
+.selectContainer .customSelect [class$='-menu'] {
+  width: 140px;
+}
+
+.selectContainer .customSelect [class$='-option'] {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.selectContainer .error {
+  color: #f70000;
+  font-size: 13px;
+  position: absolute;
+  bottom: -14px;
+  right: 5px;
+}
+/*# sourceMappingURL=CustomSelect.module.css.map */
