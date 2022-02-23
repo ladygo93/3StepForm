@@ -60,7 +60,13 @@ const StepOne = ({ id, open, setOpen, register, errors }) => {
           <div className={StepCSS.inputContainer}>
             <label htmlFor='email'>email address:</label>
             <input
-              {...register('email', { required: 'Required field!' })}
+              {...register('email', {
+                required: 'Required field!',
+                pattern: {
+                  value: /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
+                  message: 'Please provide valid email!',
+                },
+              })}
               className={StepCSS.email}
               type='text'
               id='email'

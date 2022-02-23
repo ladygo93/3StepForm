@@ -1,0 +1,37 @@
+.container {
+  background: blue !important;
+}
+
+.titleContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  padding: 10px 10px 10px 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fec500), color-stop(60%, #eea30e));
+  background: linear-gradient(#fec500, #eea30e 60%);
+  margin: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.titleContainer .title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content {
+  padding: 25px;
+  background: #dedede;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #f70000;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-box-shadow: 0 4px 4px rgba(34, 34, 34, 0.25);
+          box-shadow: 0 4px 4px rgba(34, 34, 34, 0.25);
+}
+/*# sourceMappingURL=ModalBox.module.css.map */

@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+
+.selectContainer {
+  position: relative;
+  display: grid;
+
+  label {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: $primaryFontSize;
+    cursor: pointer;
+    margin-left: 5px;
+    width: fit-content;
+  }
+
+  .customSelect {
+    [class$='-control'] {
+      text-transform: capitalize;
+      box-shadow: inset 0 -5px 20px rgba($color: $colorBlack, $alpha: 0.8);
+      border-radius: $borderRadius;
+      font-size: $secondaryFontSize;
+      border: 1px solid $formStepBg;
+      width: 140px;
+      cursor: pointer;
+    }
+
+    [class$='-indicatorContainer'] {
+      color: $colorBlack;
+    }
+    [class$='-indicatorSeparator'] {
+      background-color: transparent;
+    }
+
+    [class$='-menu'] {
+      width: 140px;
+    }
+
+    [class$='-option'] {
+      cursor: pointer;
+      text-transform: capitalize;
+      font-size: $secondaryFontSize;
+    }
+  }
+
+  .error {
+    color: $colorRed;
+    font-size: $secondaryFontSize;
+    position: absolute;
+    bottom: -14px;
+    right: 5px;
+  }
+}
