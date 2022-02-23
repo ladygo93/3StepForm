@@ -42,9 +42,8 @@ const Form = () => {
   }, [errors])
 
   const onSubmit = async (data) => {
-    console.log(data)
-
     const formatedData = {
+      // Here I can manipulate data from react-hook-form and change in a way it needs to be to the server
       ...data,
       gender: data.gender.value,
       dob: `${data.dob.day}-${data.dob.month}-${data.dob.year}`,
