@@ -5,7 +5,7 @@
   display: grid;
 
   label {
-    font-weight: 600;
+    font-weight: 500;
     text-transform: capitalize;
     font-size: $primaryFontSize;
     cursor: pointer;
@@ -20,8 +20,10 @@
       border-radius: $borderRadius;
       font-size: $secondaryFontSize;
       border: 1px solid $formStepBg;
-      width: 140px;
       cursor: pointer;
+      @media (min-width: $mediaScreen) {
+        width: 140px;
+      }
     }
 
     [class$='-indicatorContainer'] {

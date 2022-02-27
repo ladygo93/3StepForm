@@ -23,8 +23,9 @@ const StepTwo = ({ open, id, setOpen, register, errors, control }) => {
         <div className={StepCSS.contentContainer}>
           {/* Phone Num */}
           <div className={StepCSS.inputContainer}>
-            <label htmlFor='phone'>telephone number</label>
+            <label htmlFor='phoneNum'>telephone number</label>
             <input
+              id='phoneNum'
               type='text'
               {...register('phoneNum', {
                 required: 'Required field!',

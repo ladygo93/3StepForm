@@ -10,9 +10,11 @@
   gap: 10px;
 }
 
-.container .showContent.stepThreeLayout {
-  -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
+@media (min-width: 500px) {
+  .container .showContent.stepThreeLayout {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
 }
 
 .container .showContent.stepThreeLayout .error {
@@ -24,24 +26,29 @@
 .container .showContent .contentContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
   -webkit-column-gap: 10px;
           column-gap: 10px;
   row-gap: 15px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+}
+
+@media (min-width: 500px) {
+  .container .showContent .contentContainer {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .container .showContent .contentContainer .inputContainer {
-  position: relative;
   display: -ms-grid;
   display: grid;
+  position: relative;
 }
 
 .container .showContent .contentContainer .inputContainer label {
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
   font-size: 15px;
   cursor: pointer;
@@ -64,7 +71,12 @@
 
 .container .showContent .contentContainer .inputContainer input {
   text-transform: capitalize;
-  max-width: 160px;
+}
+
+@media (min-width: 500px) {
+  .container .showContent .contentContainer .inputContainer input {
+    max-width: 160px;
+  }
 }
 
 .container .showContent .contentContainer .inputContainer input.email {
@@ -72,17 +84,29 @@
 }
 
 .container .showContent .contentContainer .inputContainer textarea {
-  width: 300px !important;
-  height: 120px !important;
+  height: 120px;
   resize: none;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .container .showContent .contentContainer .inputContainer textarea {
+    width: 300px;
+  }
 }
 
 .container .showContent .contentContainer .inputContainer .error {
   color: #f70000;
   font-size: 13px;
-  position: absolute;
-  bottom: -14px;
-  right: 5px;
+  text-align: right;
+}
+
+@media (min-width: 500px) {
+  .container .showContent .contentContainer .inputContainer .error {
+    position: absolute;
+    bottom: -14px;
+    right: 5px;
+  }
 }
 
 .container .showContent .btn {

@@ -5,7 +5,7 @@
 }
 
 .selectContainer label {
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
   font-size: 15px;
   cursor: pointer;
@@ -22,8 +22,13 @@
   border-radius: 8px;
   font-size: 13px;
   border: 1px solid #dedede;
-  width: 140px;
   cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .selectContainer .customSelect [class$='-control'] {
+    width: 140px;
+  }
 }
 
 .selectContainer .customSelect [class$='-indicatorContainer'] {
