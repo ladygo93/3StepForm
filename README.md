@@ -1,6 +1,4 @@
-Finer Vision Developer Test using `React`
-
-Three step Feedback Form with validation using `react-hook-form`
+Three step Form with validation using `react-hook-form`
 
 To run APP download gitHub repo to your OS.
 Open file directory in terminal and run following commands `npm install` following by `npm start`
